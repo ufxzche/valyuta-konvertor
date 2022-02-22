@@ -37,16 +37,11 @@ var uzs = 10845;
 var rub = 79.48;
 var euro = 0.88;
 
+elFormSelect.onclick = (event) => {
+    event.preventDefault();
 
-
-elForm.addEventListener("submit" , function(e){
-
-  e.preventDefault();
-
-  var elInputVal = Number(elFormInput.value);
-  var elSelectVal = Number(elFormSelect.value);
-  var natija = elInputVal * elFormSelectOption;
-
-  elFormResult.textContent = (`${natija}`);
-
-});
+    var elInputVal = Number(elFormInput.value);
+    var elSelectVal = Number(elFormSelect.value);
+    var natija = elInputVal * elSelectVal;
+    elFormResult.textContent = (`${natija}`);
+};

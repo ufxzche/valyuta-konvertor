@@ -32,12 +32,13 @@ var elFormInput = document.querySelector(".form-input");
 var elFormSelect = document.querySelector(".form-select");
 var elFormSelectOption = Number(document.querySelector(".form-select-option").value);
 var elFormResult = document.querySelector(".form-result");
+var elFormBtn = document.querySelector(".form-btn");
 
 var uzs = 10845;
 var rub = 79.48;
 var euro = 0.88;
 
-elFormSelect.onclick = (event) => {
+elFormBtn.onclick = (event) => {
     event.preventDefault();
 
     var elInputVal = Number(elFormInput.value);
